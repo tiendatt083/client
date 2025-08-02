@@ -88,7 +88,16 @@
                 🔊
               </button>
             </td>
-          
+            <!-- Vietnamese + pronounce button -->
+            <td>
+              {{ word.vietnam }}
+              <button class="ui icon button mini"
+                title="Phát âm Vietnam"
+                @click="speak(word.vietnam, 'vi-VN')"
+                style="margin-left:4px;padding:4px 6px;">
+                🔊
+              </button>
+            </td>
             <!-- View, Edit, Delete actions -->
             <td width="75">
               <router-link
