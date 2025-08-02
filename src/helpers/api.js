@@ -24,7 +24,7 @@ export const viewAllWords = async () => {
  */
 export const viewWordById = async (id) => {
    try {
-      const response = await axios.get(backendUrl + id);
+      const response = await axios.get(`${backendUrl}/${id}`);
       return response.data;
    } catch (err) {
       console.error(err);
@@ -55,7 +55,7 @@ export const addNewWord = async (word) => {
  */
 export const editWord = async (id, word) => {
    try {
-      const response = await axios.put(backendUrl + id, word);
+      const response = await axios.put(`${backendUrl}/${id}`, word);
       return response.data;
    } catch (err) {
       console.error(err);
