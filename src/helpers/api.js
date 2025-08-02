@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Backend API base URL for vocabulary operations
-const backendUrl = 'https://web2-server.onrender.com/vocab';
+const backendUrl = 'https://web2-server.onrender.com/vocabs';
 
 /**
  * Get all vocabulary words from the backend
