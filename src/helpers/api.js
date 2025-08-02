@@ -70,7 +70,7 @@ export const editWord = async (id, word) => {
  */
 export const deleteWord = async (id) => {
    try {
-      const response = await axios.delete(backendUrl + id);
+      const response = await axios.delete(`${backendUrl}/${id}`);
       return response.data;
    } catch (err) {
       console.error(err);
