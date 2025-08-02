@@ -92,7 +92,7 @@
             <td>
               {{ word.vietnam }}
               <button class="ui icon button mini"
-                title="Phát âm Vietnam"
+                title="Pronounce Vietnam"
                 @click="speak(word.vietnam, 'vi-VN')"
                 style="margin-left:4px;padding:4px 6px;">
                 🔊
